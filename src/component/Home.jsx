@@ -3,6 +3,9 @@ import Navbar from './Navbar'
 import Hero from './Hero'
 import { WobbleCard } from "../components/ui/wobble-card";
 import FirstCardImage from '../assets/img4.jpeg'
+import Section from './Section';
+import Travel from './Travel';
+import Experience from './Experience';
 const Home = () => {
   return (
     <div>
@@ -10,6 +13,9 @@ const Home = () => {
         {/* <Hero/> */}
         {/* <AboutUs/> */}
         <WobbleCardDemo />
+        <Section/>
+        <Travel/>
+        <Experience/>
     </div>
   )
 }
@@ -26,7 +32,7 @@ export function WobbleCardDemo() {
         className=""
         >
         <div className="max-w-lg relative ">
-            <h2 className="text-left text-balance text-base md:text-3xl lg:text-7xl font-semibold tracking-[-0.015em] text-white">
+            <h2 className="text-left text-balance text-2xl md:text-3xl lg:text-7xl font-semibold tracking-[-0.015em] text-white">
                 Refreshing Exploration The world
             </h2>
             <p className="mt-4 text-left text-lg text-neutral-100">
@@ -47,44 +53,42 @@ export function WobbleCardDemo() {
         containerClassName="col-span-1 min-h-[300px] bg-[url('https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover bg-center  relative"
         >
         <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white relative ">
-            No shirt, no shoes, no weapons.
+            Collect memories, not things
         </h2>
         <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200 relative ">
-            If someone yells “stop!”, goes limp, or taps out, the fight is over.
+           Where dreams meet destinations
         </p>
     </WobbleCard>
      <WobbleCard
   containerClassName="col-span-1 min-h-[300px] bg-[url('https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600')] bg-cover bg-center bg-no-repeat relative"
 >
   <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white relative z-10">
-    No shirt, no shoes, no weapons.
+      Explore more. Worry less
   </h2>
   <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200 relative z-10">
-    If someone yells “stop!”, goes limp, or taps out, the fight is over.
+      Pack light. Travel far
   </p>
 </WobbleCard>
-     <WobbleCard
+     <WobbleCard className="md:flex hidden flex-col"
 //   containerClassName="col-span-1 min-h-[300px] bg-[url('https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600')] bg-cover bg-center bg-no-repeat relative"
 >
   <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-black relative z-10">
-    No shirt, no shoes, no weapons.
+    Travel is the only thing you buy that makes you richer
   </h2>
   <p className="mt-4 max-w-[26rem] text-left text-base/6 text-black relative z-10">
-    If someone yells “stop!”, goes limp, or taps out, the fight is over.
+      Go beyond the map
   </p>
 </WobbleCard>
 
       <WobbleCard
-        containerClassName="col-span-1 lg:col-span-1 bg-[url('https://images.pexels.com/photos/1448136/pexels-photo-1448136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover bg-center bg-no-repeat relative min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+        containerClassName="col-span-1 lg:col-span-1 bg-[url('https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=600')] bg-cover bg-center bg-no-repeat relative min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
         <div className="max-w-sm">
           <h2
             className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            Signup for blazing-fast cutting-edge state of the art Gippity AI
-            wrapper today!
+                Adventure is out there—go find it
           </h2>
           <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-            With over 100,000 mothly active bot users, Gippity AI is the most
-            popular AI platform for developers.
+            Go where you feel most alive
           </p>
         </div>
         {/* <img
@@ -95,16 +99,14 @@ export function WobbleCardDemo() {
           className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl" /> */}
       </WobbleCard>
       <WobbleCard
-        containerClassName="col-span-1 lg:col-span-1 bg-[url('https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600')] bg-cover bg-center bg-no-repeat relative min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+        containerClassName="col-span-1 lg:col-span-1 bg-[url('https://images.pexels.com/photos/19161532/pexels-photo-19161532/free-photo-of-a-valley-with-mountains-and-clouds-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover bg-center bg-no-repeat relative min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
         <div className="max-w-sm">
           <h2
             className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            Signup for blazing-fast cutting-edge state of the art Gippity AI
-            wrapper today!
+              Chasing sunsets, finding peace
           </h2>
           <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-            With over 100,000 mothly active bot users, Gippity AI is the most
-            popular AI platform for developers.
+              See the world. Feel the wonder
           </p>
         </div>
         {/* <img

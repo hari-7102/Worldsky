@@ -52,9 +52,9 @@ const Navbar = () => {
         <div className="md:flex  text-black  hidden">
           <Link
             to="/contact"
-            className="text-lg font-medium hover:text-white hover:bg-violet-800 bg-white text-violet-700 rounded-lg px-5 py-2"
+            className=" font-medium bg-black text-white rounded-lg px-5 py-2"
           >
-            Contact
+            Register
           </Link>
         </div>
           </div>
@@ -62,13 +62,13 @@ const Navbar = () => {
 
             <div className="flex items-center gap-0.5">
             <ChartColumnDecreasing size={28} className="text-violet-300" />
-            <p className="font-medium text-3xl text-white">Nexus</p>
+            <p className="font-medium text-3xl text-black">Nexus</p>
             </div>
                 
             <button  onClick={() => Setiopen(!Isopen)}>
             {Isopen ? 
-             <X size={23} className="text-white  cursor-pointer" />  :
-             <AlignJustify size={23} className="text-white    cursor-pointer"/>} 
+             <X size={23} className="text-black  cursor-pointer" />  :
+             <AlignJustify size={23} className="text-black    cursor-pointer"/>} 
             
             </button>
 
@@ -77,7 +77,7 @@ const Navbar = () => {
         {Isopen &&
             
 
-            <div className="flex md:hidden  flex-col justify-center items-center h-auto text-white font-medium gap-4">
+            <div className="flex md:hidden  flex-col justify-center items-center h-auto text-black font-medium gap-4">
                 {/* <div className="flex items-center gap-0.5">
                     <ChartColumnDecreasing size={28} className="text-violet-300" />
                     <p className="font-medium text-3xl text-white">Nexus</p>
