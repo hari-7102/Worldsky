@@ -2,13 +2,13 @@ import React from 'react'
 import River from "../assets/river.jpeg"
 const Travel = () => {
   return (
-    <div className='flex justify-center py-28'>
+    <div className='flex flex-wrap w-full lg:flex-nowrap justify-center py-28'>
 
-        <div className='w-1/2 flex justify-center'>
+        <div className='md:w-1/2 w-full flex justify-center'>
             <img src={River} alt="" className='w-80 h-auto rounded-3xl'/>
         </div>
 
-        <div className='w-1/2 flex-col flex justify-start gap-1.5 px-auto'>
+        <div className='md:w-1/2 px-4  w-full   flex-col   flex-wrap lg:flex-nowrap flex justify-start gap-1.5 px-auto'>
             <p className='text-5xl font-serif   '>Travelling make you Rich</p>
             <p className='text-5xl  font-serif    '>in Stories and Experiences,</p>
             <p className='text-5xl  font-serif   '>and Memories</p>

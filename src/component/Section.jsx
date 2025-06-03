@@ -3,7 +3,7 @@ import React from "react";
 const Section = () => {
   return (
     <div className="py-52 bg-gray-100 font-sans">
-      <div className="text-black text-center py-2.5 flex justify-center items-end gap-5">
+      <div className="text-black text-center py-2.5 flex flex-wrap lg:flex-nowrap justify-center items-end gap-5">
         <p className="text-7xl font-serif ">
           Make Your Move and Discover <br />
         </p>
@@ -14,7 +14,7 @@ const Section = () => {
         />
         <p className="text-7xl  font-serif   ">the</p>
       </div>
-      <div className="text-black text-center flex justify-center items-end gap-5">
+      <div className="text-black text-center flex flex-wrap lg:flex-nowrap   justify-center items-end gap-5">
         <p className="text-7xl  font-serif   ">
           world <br />
         </p>

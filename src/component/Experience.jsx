@@ -1,6 +1,39 @@
 import React from 'react'
 import { MapPin } from 'lucide-react';
 const Experience = () => {
+
+  const picture = [
+    {name : 'Mountain Bromo' , 
+      img : <MapPin/> ,
+      place : "Indonesia"
+    },
+    {name : 'Mountain Kauai' , 
+      img : <MapPin/> ,
+      place : "Hawai"
+    },
+    {name : 'Azores Archipelago' , 
+      img : <MapPin/> ,
+      place : "Portugal"
+    },
+    {name : 'Mountain Fuji' , 
+      img : <MapPin/> ,
+      place : "Japan"
+    },
+    {name : 'Raja Ampat' , 
+      img : <MapPin/> ,
+      place : "Indonesia"
+    },
+  ]
+
+
+  const span = ["col-span-2 bg-center" , "col-span-1 bg-center" , "col-span-3 bg-center" , "col-span-1 bg-bottom" , "col-span-2 bg-left" ]
+
+  const backgrd = ["https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" ,
+    "https://images.pexels.com/photos/19161510/pexels-photo-19161510/free-photo-of-a-view-of-snow-covered-mountains-with-trees.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/358588/pexels-photo-358588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" ,
+    "https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+    "https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  ]
   return (
     <div className='bg-gray-100 py-12 mx-auto  '>
         <div className="text-center text-5xl font-medium bg-gradient-to-r from-gray-600 to-neutral-500  bg-clip-text text-transparent">
@@ -8,8 +41,40 @@ const Experience = () => {
         </div>
 
 
-        <div className='grid grid-cols-3 grid-rows-3 gap-3  mx-auto max-w-5xl mt-20'>
-          <div className='bg-[url("https://images.pexels.com/photos/19196727/pexels-photo-19196727/free-photo-of-a-mountain-range-with-trees-and-clouds-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] h-60 rounded-2xl col-span-2 relative'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 mx-auto max-w-5xl mt-20'>
+          {picture.map((item , index) => (
+              <div
+                key={index}
+                className={`relative h-60 rounded-2xl bg-cover bg-center ${
+                  index === 0
+                    ? 'col-span-1 md:col-span-2'
+                    : index === 1
+                    ? 'col-span-1'
+                    : 'col-span-1 md:col-span-3'
+                }`}
+                style={{ backgroundImage: `url(${backgrd[index]})` }}
+              >
+            <div className='absolute  text-2xl text-white bottom-5 left-7'>
+              <p>{item.name}</p>
+              <div className='flex gap-1 items-center'>
+                <MapPin  size={18}/>
+                <p className='text-base'>{item.place}</p>
+              </div>
+            </div>
+          </div>
+          ))
+
+          }
+          {/* <div className='bg-[url("https://images.pexels.com/photos/19196727/pexels-photo-19196727/free-photo-of-a-mountain-range-with-trees-and-clouds-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] h-60 rounded-2xl col-span-2 relative'>
+            <div className='absolute  text-2xl text-white bottom-5 left-7'>
+              <p>Mountain Borowe</p>
+              <div className='flex gap-1 items-center'>
+                <MapPin  size={18}/>
+                <p className='text-base'>Indonesia</p>
+              </div>
+            </div>
+          </div> */}
+          {/* <div className='bg-[url("https://images.pexels.com/photos/19161510/pexels-photo-19161510/free-photo-of-a-view-of-snow-covered-mountains-with-trees.jpeg?auto=compress&cs=tinysrgb&w=600")] relative h-60 rounded-2xl  col-span-1'>
             <div className='absolute  text-2xl text-white bottom-5 left-7'>
               <p>Mountain Borowe</p>
               <div className='flex gap-1 items-center'>
@@ -18,8 +83,8 @@ const Experience = () => {
               </div>
             </div>
           </div>
-          <div className='bg-[url("https://images.pexels.com/photos/19161510/pexels-photo-19161510/free-photo-of-a-view-of-snow-covered-mountains-with-trees.jpeg?auto=compress&cs=tinysrgb&w=600")] relative h-60 rounded-2xl  col-span-1'>
-                        <div className='absolute  text-2xl text-white bottom-5 left-7'>
+          <div className='bg-[url("https://images.pexels.com/photos/18077986/pexels-photo-18077986/free-photo-of-a-river-with-buildings-on-the-banks-and-trees.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] h-60 rounded-2xl bg-left col-span-3 relative '>
+            <div className='absolute  text-2xl text-white bottom-5 left-7'>
               <p>Mountain Borowe</p>
               <div className='flex gap-1 items-center'>
                 <MapPin  size={18}/>
@@ -27,9 +92,8 @@ const Experience = () => {
               </div>
             </div>
           </div>
-          <p className='bg-amber-900 h-60 rounded-2xl  col-span-3'></p>
           <p className='bg-amber-900 h-60 rounded-2xl  col-span-1'></p>
-          <p className='bg-amber-900 h-60 rounded-2xl  col-span-2'></p>
+          <p className='bg-amber-900 h-60 rounded-2xl  col-span-2'></p> */}
 
         </div>
 

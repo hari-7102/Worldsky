@@ -6,6 +6,8 @@ import FirstCardImage from '../assets/img4.jpeg'
 import Section from './Section';
 import Travel from './Travel';
 import Experience from './Experience';
+import Good from './Good';
+import Footer from './Footer';
 const Home = () => {
   return (
     <div>
@@ -16,6 +18,8 @@ const Home = () => {
         <Section/>
         <Travel/>
         <Experience/>
+        <Good/>
+        <Footer/>
     </div>
   )
 }
