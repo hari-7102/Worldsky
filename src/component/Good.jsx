@@ -1,74 +1,65 @@
 import React from 'react'
+import Carousel from "@/components/ui/carousel";
 
-const Good = () => {
+function Good() {
   return (
     <div>
-        <div className='text-center py-24'>
-            <p className='text-5xl text-black'>Get a Good Travel Experience</p> 
-            <div className='text-base text-gray-400 mt-4'>    
-                <p>A good travel experience is not just about the pieces visited</p>
-                <p>but also the stories and lessons brought back home</p>
-            </div>
-            <div className='flex justify-evenly items-center w-full  mt-7'>
-                
-                    <div className="relative w-full max-w-lg mx-auto mt-10">
-                    <img
-                        src="https://images.pexels.com/photos/32379779/pexels-photo-32379779/free-photo-of-nuwara-eliya-street-scene-on-a-misty-day.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Tourguide"
-                        className="max-w-lg h-auto object-cover rounded-2xl"
-                    />
-
-                    <div className="absolute -right-11 -bottom-11 bg-white bg-opacity-90 p-6 rounded-2xl shadow-lg w-48 text-center">
-                        <p className="text-2xl font-semibold">Tourguide</p>
-                        <p className="text-2xl font-semibold">Professional</p>
-
-                        <div className="text-gray-500 text-sm mt-4">
-                        <p>With in-depth knowledge</p>
-                        <p>of the destination culture,</p>
-                        <p>history, and local</p>
-                        <p>attractions</p>
-                        </div>
-
-                        <p className="text-lg mt-4 font-semibold text-black hover:underline cursor-pointer">
-                        Learn More →
-                        </p>
-                    </div>
-                    </div>
-
-                                   <div className="relative w-full max-w-lg mx-auto mt-10">
-                    <img
-                        src="https://images.pexels.com/photos/7542627/pexels-photo-7542627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Tourguide"
-                        className="max-w-lg h-auto object-cover rounded-2xl"
-                    />
-
-                    <div className="absolute -right-11 -bottom-11 bg-white bg-opacity-90 p-6 rounded-2xl shadow-lg w-48 text-center">
-                        <p className="text-2xl font-semibold">Solid Travel</p>
-                        <p className="text-2xl font-semibold">Group</p>
-
-                        <div className="text-gray-500 text-sm mt-4">
-                        <p>With in-depth knowledge</p>
-                        <p>of the destination culture,</p>
-                        <p>history, and local</p>
-                        <p>attractions</p>
-                        </div>
-
-                        <p className="text-lg mt-4 font-semibold text-black hover:underline cursor-pointer">
-                        Learn More →
-                        </p>
-                    </div>
-                    </div>
-
-            </div>
-        </div>
-
-        <div>
-
-        </div>
-
-
+        <p className='text-center text-3xl md:text-5xl pt-11 text-black font-serif'>GET A GOOD TRAVEL</p>
+        <p className='text-center text-3xl md:text-5xl  text-black font-serif'>EXPERIENCE</p>
+        <CarouselDemo/>
     </div>
   )
 }
 
 export default Good
+
+
+
+
+export function CarouselDemo() {
+  const slideData = [
+    {
+      title: "Mystic Mountains",
+      button: "Explore Component",
+      src: "https://images.pexels.com/photos/19416720/pexels-photo-19416720/free-photo-of-a-church-on-a-hillside-with-a-steeple.jpeg?auto=compress&cs=tinysrgb&w=600",
+    },
+    {
+      title: "Sydney",
+      button: "Explore Component",
+      src: "https://www.australia.com/content/australia/en_in/travel-inspiration/where-to-visit/jcr:content/mainParsys/imagewithcaption_278174699/LargeImageTile/largeImageSrc.adapt.740.medium.jpg",
+    },
+    {
+      title: "Neon Nights",
+      button: "Explore Component",
+      src: "https://images.unsplash.com/photo-1590041794748-2d8eb73a571c?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      title: "Melbourne",
+      button: "Explore Component",
+      src: "https://www.australia.com/content/australia/en_in/travel-inspiration/where-to-visit/jcr:content/mainParsys/imagewithcaption_387372445/LargeImageTile/largeImageSrc.adapt.740.medium.jpg",
+    },
+    {
+      title: "Kakadu",
+      button: "Explore Component",
+      src: "https://www.australia.com/content/australia/en_in/travel-inspiration/where-to-visit/jcr:content/mainParsys/imagewithcaption_1947729883/LargeImageTile/largeImageSrc.adapt.740.medium.jpg",
+    },
+    {
+      title: "Hobart",
+      button: "Explore Component",
+      src: "https://www.australia.com/content/australia/en_in/travel-inspiration/where-to-visit/jcr:content/mainParsys/imagewithcaption_1098076754/LargeImageTile/largeImageSrc.adapt.740.medium.jpg",
+    },
+    {
+      title: "Picasso Museum",
+      button: "Explore Component",
+      src: "https://hblimg.mmtcdn.com/content/hubble/img/barcellona/mmt/activities/t_ufs/m_activities_barcelona_picasso_museum_l_430_604.jpg",
+    },
+  ];
+  return (
+
+    <div className="relative overflow-hidden w-full h-full py-20">
+      <Carousel slides={slideData} />
+    </div>
+
+  );
+
+}

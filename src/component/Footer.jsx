@@ -4,9 +4,9 @@ import { Globe } from "lucide-react";
 const Footer = () => {
   return (
     <div className="bg-black py-3.5">
-      <div className=" px-14 py-11 flex justify-between">
-        <div className="w-1/3 flex flex-col gap-7 text-white">
-          <div className="flex items-center    gap-0.5">
+      <div className="px-4  md:px-14 py-11   flex-wrap lg:flex-nowrap    flex justify-between">
+        <div className="md:w-1/3 w-full flex justify-center items-center md:justify-start md:items-start flex-col gap-7 flex-wrap lg:flex-nowrap text-white">
+          <div className="flex items-center gap-0.5">
             <Globe size={24} className="text-white" />
             <p className="font-semibold text-xl text-white">WORLDSKY</p>
           </div>
@@ -19,29 +19,29 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="w-2/3 items-end justify-end flex gap-20">
-            <div className="flex flex-col text-white gap-2.5">
+        <div className="md:w-2/3 py-4  w-full md:items-end md:justify-end  justify-center items-center flex flex-wrap lg:flex-nowrap  gap-6 md:gap-20">
+            <div className="flex flex-wrap lg:flex-nowrap w-full  justify-center items-center  flex-col text-white gap-2.5">
                 <p className="text-2xl mb-1.5">TOUR</p>
                 <p className="text-gray-400 text-base">Austrailla Special</p>
                 <p  className="text-gray-400 text-base" >Africa</p>
                 <p  className="text-gray-400 text-base" >America</p>
                 <p className="text-gray-400 text-base"   >Asia</p>
             </div>
-            <div className="flex flex-col text-white gap-2.5">
+            <div className="flex  flex-wrap lg:flex-nowrap  justify-center items-center  w-full flex-col text-white gap-2.5">
                 <p className="text-2xl mb-1.5">Company</p>
                 <p className="text-gray-400 text-base"  >About</p>
                 <p className="text-gray-400 text-base"  >Press</p>
                 <p className="text-gray-400 text-base"  >Carrers</p>
                 <p  className="text-gray-400 text-base">Contact</p>
             </div>
-            <div className="flex flex-col text-white gap-2.5">
-                <p className="text-2xl    mb-1.5">Products</p>
+            <div className="flex flex-wrap justify-center items-center   lg:flex-nowrap w-full flex-col text-white gap-2.5">
+                <p className="text-2xl   mb-1.5">Products</p>
                 <p  className="text-gray-400 text-base">Package</p>
                 <p className="text-gray-400 text-base"   >Austrailla Special</p>
                 <p className="text-gray-400 text-base" >Austrailla Special</p>
                 <p  className="text-gray-400 text-base" >Austrailla Special</p>
             </div>
-            <div className="flex flex-col text-white gap-2.5">
+            <div className="flex   flex-wrap lg:flex-nowrap   justify-center items-center  w-full  flex-col text-white gap-2.5">
                 <p className="text-2xl  mb-1.5  ">Connect</p>
                 <p className="text-gray-400 text-base"  >Instagram</p>
                 <p className="text-gray-400 text-base"  >LinkedIn</p>
@@ -54,9 +54,9 @@ const Footer = () => {
 
         <hr  className="border-t-2 mx-16  border-white py-4"/>
 
-        <div className="flex justify-between px-14">
+        <div className="flex flex-wrap  w-full lg:flex-nowrap justify-between px-14">
             <p  className="text-white">© 2025 Hariharan S.All rights Reserved.</p>
-            <p  className="text-white" >Terms | Privacy</p>
+            <p  className="text-white" >Terms & Conditions | Privacy</p>
         </div>
     </div>
   );

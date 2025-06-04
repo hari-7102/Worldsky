@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from './Navbar'
 import FirstCardImage from '../assets/img3.jpeg'
+import Hero from './About/Hero'
+import About from './About/About'
 const AboutUs = () => {
   return (
     <div>
@@ -9,6 +11,8 @@ const AboutUs = () => {
                 style={{ backgroundImage: `url(${FirstCardImage})` }}>
             <p className="text-white text-2xl font-semibold">Welcome to our vlog</p>
         </div> */}
+        <Hero/>
+        <About/>
 
     </div>
   )

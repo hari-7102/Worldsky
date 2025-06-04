@@ -10,9 +10,9 @@ const Navbar = () => {
 
     const NavbarItems = [
         { name: "HOME", link: "/" },
-        { name: "PROJECT", link: "/project" },
         { name: "ABOUT", link: "/about" },
-        { name: "SERVICE", link: "/service" },
+        { name: "DESTINATION", link: "/project" },
+        { name: "REVIEWS", link: "/service" },
         { name: "F&Q", link: "/question" },
     ];
 
@@ -61,8 +61,8 @@ const Navbar = () => {
         <div className="md:hidden justify-between  text-white flex  p-6 px-7">
 
             <div className="flex items-center gap-0.5">
-            <ChartColumnDecreasing size={28} className="text-violet-300" />
-            <p className="font-medium text-3xl text-black">Nexus</p>
+            <Globe size={24} className="text-black" />
+            <p className="font-medium text-2xl text-black">WORLDSKY</p>
             </div>
                 
             <button  onClick={() => Setiopen(!Isopen)}>

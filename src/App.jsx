@@ -6,11 +6,13 @@ import Project from './component/Project'
 import Service from './component/Service'
 import Contact from './component/Contact'
 import Question from './component/Question'
+import ScrollToTop from './component/ScrollToTop'
 const App = () => {
   return (
     <div>
       
       <Routers>
+        <ScrollToTop/>
         <Routes>
           <Route>
             <Route path="/" element={<Home/>}/>

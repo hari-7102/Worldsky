@@ -30,13 +30,13 @@ export default Home
 export function WobbleCardDemo() {
   return (
     <div
-      className="grid grid-cols-1 lg:grid-cols-3 gap-2 mt-2  px-11 py-2 xl:w-full">
+      className="grid grid-cols-1 lg:grid-cols-3 gap-2 mt-2 md:px-11 px-6 py-2 xl:w-full">
      <WobbleCard
         containerClassName="col-span-1 lg:col-span-2 lg:row-span-2 h-full  min-h-[500px] lg:min-h-[300px] bg-[url('https://images.pexels.com/photos/1324803/pexels-photo-1324803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover bg-center bg-no-repeat relative overflow-hidden"
         className=""
         >
         <div className="max-w-lg relative ">
-            <h2 className="text-left text-balance text-2xl md:text-3xl lg:text-7xl font-semibold tracking-[-0.015em] text-white">
+            <h2 className="text-left text-balance text-3xl md:text-3xl lg:text-7xl font-semibold tracking-[-0.015em] text-white">
                 Refreshing Exploration The world
             </h2>
             <p className="mt-4 text-left text-lg text-neutral-100">
@@ -56,7 +56,7 @@ export function WobbleCardDemo() {
     <WobbleCard
         containerClassName="col-span-1 min-h-[300px] bg-[url('https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover bg-center  relative"
         >
-        <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white relative ">
+        <h2 className="max-w-80 text-left text-balance text-2xl md:text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white relative ">
             Collect memories, not things
         </h2>
         <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200 relative ">
@@ -66,7 +66,7 @@ export function WobbleCardDemo() {
      <WobbleCard
   containerClassName="col-span-1 min-h-[300px] bg-[url('https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=600')] bg-cover bg-center bg-no-repeat relative"
 >
-  <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white relative z-10">
+  <h2 className="max-w-80 text-left text-balance text-2xl md:text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white relative z-10">
       Explore more. Worry less
   </h2>
   <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200 relative z-10">
@@ -88,7 +88,7 @@ export function WobbleCardDemo() {
         containerClassName="col-span-1 lg:col-span-1 bg-[url('https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=600')] bg-cover bg-center bg-no-repeat relative min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
         <div className="max-w-sm">
           <h2
-            className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+            className="max-w-sm md:max-w-lg  text-left text-balance text-2xl md:text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                 Adventure is out there—go find it
           </h2>
           <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
@@ -103,10 +103,10 @@ export function WobbleCardDemo() {
           className="absolute -right-10 md:-right-[40%] lg:-right-[20%] -bottom-10 object-contain rounded-2xl" /> */}
       </WobbleCard>
       <WobbleCard
-        containerClassName="col-span-1 lg:col-span-1 bg-[url('https://images.pexels.com/photos/19161532/pexels-photo-19161532/free-photo-of-a-valley-with-mountains-and-clouds-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover bg-center bg-no-repeat relative min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+        containerClassName="col-span-1 lg:col-span-1 bg-[url('https://media.istockphoto.com/id/1196989645/photo/aerial-view-of-coastal-road-in-tuscany-italy.jpg?s=612x612&w=0&k=20&c=BESdo-1xNSbMoiWqLooT_Z2XGEdD8YByMmWjaDivNzs=')] bg-cover bg-center bg-no-repeat relative min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
         <div className="max-w-sm">
           <h2
-            className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+            className="max-w-sm md:max-w-lg  text-left text-balance text-2xl md:text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
               Chasing sunsets, finding peace
           </h2>
           <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">

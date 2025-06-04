@@ -26,7 +26,11 @@ const Experience = () => {
   ]
 
 
-  const span = ["col-span-2 bg-center" , "col-span-1 bg-center" , "col-span-3 bg-center" , "col-span-1 bg-bottom" , "col-span-2 bg-left" ]
+  const span = ["md:col-span-2 col-span-3 bg-center" ,
+    "md:col-span-1  col-span-3 bg-center" ,
+    "col-span-3 bg-center" ,
+    "md:col-span-1  col-span-3    bg-bottom" ,
+    "md:col-span-2   col-span-3    bg-left" ]
 
   const backgrd = ["https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" ,
     "https://images.pexels.com/photos/19161510/pexels-photo-19161510/free-photo-of-a-view-of-snow-covered-mountains-with-trees.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -36,7 +40,7 @@ const Experience = () => {
   ]
   return (
     <div className='bg-gray-100 py-12 mx-auto  '>
-        <div className="text-center text-5xl font-medium bg-gradient-to-r from-gray-600 to-neutral-500  bg-clip-text text-transparent">
+        <div className="text-center text-5xl font-medium ">
             <p>Experience Our Destination</p>       
         </div>
 
@@ -45,13 +49,7 @@ const Experience = () => {
           {picture.map((item , index) => (
               <div
                 key={index}
-                className={`relative h-60 rounded-2xl bg-cover bg-center ${
-                  index === 0
-                    ? 'col-span-1 md:col-span-2'
-                    : index === 1
-                    ? 'col-span-1'
-                    : 'col-span-1 md:col-span-3'
-                }`}
+                className={`relative h-60 rounded-2xl bg-cover bg-center ${span[index]}`}
                 style={{ backgroundImage: `url(${backgrd[index]})` }}
               >
             <div className='absolute  text-2xl text-white bottom-5 left-7'>
