@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Footer from './Footer'
 import FirstCardImage from '../assets/img3.jpeg'
 import Hero from './About/Hero'
 import About from './About/About'
@@ -13,6 +14,7 @@ const AboutUs = () => {
         </div> */}
         <Hero/>
         <About/>
+        <Footer/>
 
     </div>
   )
