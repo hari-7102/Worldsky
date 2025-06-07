@@ -1,9 +1,14 @@
 import React from 'react'
 import Navbar from './Navbar'
-
+import Review from './Destination/Review'
 const Service = () => {
   return (
-    <div><Navbar/></div>
+    <div>
+      <Navbar/>
+      <Review/>
+      
+      
+    </div>
   )
 }
 

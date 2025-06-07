@@ -13,7 +13,7 @@ const Navbar = () => {
         { name: "ABOUT", link: "/about" },
         { name: "DESTINATION", link: "/project" },
         { name: "REVIEWS", link: "/service" },
-        { name: "F&Q", link: "/question" },
+        { name: "CONTACT", link: "/question" },
     ];
 
     const location = useLocation();
@@ -52,13 +52,13 @@ const Navbar = () => {
         <div className="md:flex  text-black  hidden">
           <Link
             to="/contact"
-            className=" font-medium bg-black text-white rounded-lg px-5 py-2"
+            className="font-medium bg-black text-white rounded-lg px-5 py-2"
           >
             Register
           </Link>
         </div>
           </div>
-        <div className="md:hidden justify-between  text-white flex  p-6 px-7">
+        <div className="md:hidden  justify-between  text-white flex  p-6 px-7">
 
             <div className="flex items-center gap-0.5">
             <Globe size={24} className="text-black" />
