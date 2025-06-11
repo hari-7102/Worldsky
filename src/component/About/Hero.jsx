@@ -2,9 +2,9 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="px-16 py-20 flex">
-      <div className="w-1/2">
-        <p className="text-6xl font-medium text-black">
+    <div className="px-16 py-7 md:py-20 flex flex-wrap lg:flex-nowrap">
+      <div className="md:w-1/2 w-full">
+        <p className=" text-4xl  md:text-6xl font-medium text-black">
           Welcome to <span className="text-blue-500">WorldSky</span> Your
           Gateway to Adventure!
         </p>
@@ -36,7 +36,7 @@ const Hero = () => {
         </button>
       </div>
 
-      <div className="w-1/2">
+      <div className="md:w-1/2 w-full py-4">
         <img
           src="https://images.pexels.com/photos/12887393/pexels-photo-12887393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           className="rounded-2xl"

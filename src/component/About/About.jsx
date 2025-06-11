@@ -7,15 +7,15 @@ import { CalendarRange } from 'lucide-react';
 const About = () => {
   return (
     <div className="px-16 py-11 ">
-      <div className="w-full flex">
-      <div className="w-1/2 ">
+      <div className="w-full flex flex-wrap lg:flex-nowrap">
+      <div className="md:w-1/2   w-full ">
         <img
-          className="h-[41rem] w-full rounded-2xl  "
+          className="md:h-[41rem] h-fit w-full rounded-2xl  "
           src="https://images.pexels.com/photos/28772389/pexels-photo-28772389/free-photo-of-majestic-snow-capped-mountain-in-tirol-austria.jpeg?auto=compress&cs=tinysrgb&w=600"
           alt=""
         />
       </div>
-      <div className="w-1/2 px-7 ">
+      <div className="md:w-1/2  w-full  py-6 px-7 ">
         <p className="text-6xl font-medium text-black">
           A Story Of <span className="text-blue-600"> WorldSky </span>{" "}
         </p>

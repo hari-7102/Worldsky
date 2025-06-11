@@ -7,6 +7,8 @@ import Service from './component/Service'
 import Contact from './component/Contact'
 import Question from './component/Question'
 import ScrollToTop from './component/ScrollToTop'
+import Indonesia from './component/Destination/Indonesia'
+import Japan from './component/Destination/Japan'
 const App = () => {
   return (
     <div>
@@ -21,6 +23,8 @@ const App = () => {
             <Route path="/service" element={<Service/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/question" element={<Question/>}/>
+            <Route path="/project/indonesia" element={<Indonesia/>}/>
+            <Route path="/project/japan" element={<Japan/>}/>
           </Route>
         </Routes>
       </Routers>

@@ -1,6 +1,8 @@
 import React from 'react'
 import { MapPin } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 const destination = () => {
+  const navigate = useNavigate()
   return (
     <div className='px-16 py-10'>
         <p className='text-7xl font-serif'>Explore the Popular Destination</p>
@@ -9,7 +11,7 @@ const destination = () => {
         {/* <p className='text-6xl font-semibold mt-6'>Italy Tourism</p> */}
  
         <div className='flex flex-col items-center justify-center'>
-          <div className='bg-[url("https://vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com/shutterstock601341215huge-1675509836757.jpg")] bg-cover h-[31rem] items-center w-4/5 my-24 relative rounded-2xl '>
+          <div   onClick={()=> navigate('/project/japan')}     className='bg-[url("https://vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com/shutterstock601341215huge-1675509836757.jpg")] bg-cover h-[31rem] items-center w-4/5 my-24 relative rounded-2xl '>
               <p className=' bg-[url("https://vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com/1522535639-1675509976639.jpg")] bg-cover w-80 h-64 rounded-xl absolute -bottom-24 -right-24'></p>
               <div className='flex items-center gap-2 absolute p-4  '>
                 <MapPin size={26}  />
@@ -36,7 +38,7 @@ const destination = () => {
               </div>
             </div>
 
-            <div className=' my-24  bg-[url("https://images.pexels.com/photos/28518047/pexels-photo-28518047/free-photo-of-majestic-prambanan-temple-complex-in-java.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] w-4/5  h-[31rem] bg-cover relative rounded-2xl '>
+            <div onClick={()=> navigate('/project/indonesia')} className=' my-24  bg-[url("https://images.pexels.com/photos/28518047/pexels-photo-28518047/free-photo-of-majestic-prambanan-temple-complex-in-java.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] w-4/5  h-[31rem] bg-cover relative rounded-2xl '>
                 <p className='bg-[url("https://images.pexels.com/photos/2278543/pexels-photo-2278543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")]  bg-cover w-80 h-64 rounded-xl absolute -bottom-24 -right-24  '></p>
               <div className='flex items-center gap-2 absolute p-4  '>
                 <MapPin size={26} className='text-white' />
