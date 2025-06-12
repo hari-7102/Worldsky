@@ -21,32 +21,32 @@ const Footer = () => {
 
         <div className="md:w-2/3 py-4  w-full md:items-end md:justify-end  justify-center items-center flex flex-wrap lg:flex-nowrap  gap-6 md:gap-20">
             <div className="flex flex-wrap lg:flex-nowrap w-full  justify-center items-center  flex-col text-white gap-2.5">
-                <p className="text-2xl mb-1.5">TOUR</p>
-                <p className="text-gray-400 text-base">Austrailla Special</p>
-                <p  className="text-gray-400 text-base" >Africa</p>
-                <p  className="text-gray-400 text-base" >America</p>
-                <p className="text-gray-400 text-base"   >Asia</p>
+                <p className="text-2xl mb-1.5">Destination</p>
+                <p className="text-gray-400 text-base  hover:text-white    "><a href="/destination/japan">Japan</a></p>
+                <p  className="text-gray-400 text-base   hover:text-white    " ><a href="/destination/italy">Italy</a></p>
+                <p  className="text-gray-400 text-base   hover:text-white  " ><a href="/destination/indonesia">Indonesia</a></p>
+                <p className="text-gray-400 text-base  hover:text-white    "   ><a href="/destination/japan">Japan</a></p>
             </div>
             <div className="flex  flex-wrap lg:flex-nowrap  justify-center items-center  w-full flex-col text-white gap-2.5">
-                <p className="text-2xl mb-1.5">Company</p>
-                <p className="text-gray-400 text-base"  >About</p>
-                <p className="text-gray-400 text-base"  >Press</p>
-                <p className="text-gray-400 text-base"  >Carrers</p>
-                <p  className="text-gray-400 text-base">Contact</p>
+                <p className="text-2xl mb-1.5">Helpful Links</p>
+                <p className="text-gray-400 text-base  hover:text-white   "  ><a href="/about">About Us</a></p>
+                <p className="text-gray-400 text-base  hover:text-white   "  ><a href="/destination">Destination</a></p>
+                <p className="text-gray-400 text-base   hover:text-white   "  ><a href="/reviews">Reviews</a></p>
+                <p  className="text-gray-400 text-base  hover:text-white  "><a href="/contact">Contact</a></p>
             </div>
-            <div className="flex flex-wrap justify-center items-center   lg:flex-nowrap w-full flex-col text-white gap-2.5">
+            {/* <div className="flex flex-wrap justify-center items-center   lg:flex-nowrap w-full flex-col text-white gap-2.5">
                 <p className="text-2xl   mb-1.5">Products</p>
                 <p  className="text-gray-400 text-base">Package</p>
                 <p className="text-gray-400 text-base"   >Austrailla Special</p>
                 <p className="text-gray-400 text-base" >Austrailla Special</p>
                 <p  className="text-gray-400 text-base" >Austrailla Special</p>
-            </div>
+            </div> */}
             <div className="flex   flex-wrap lg:flex-nowrap   justify-center items-center  w-full  flex-col text-white gap-2.5">
                 <p className="text-2xl  mb-1.5  ">Connect</p>
-                <p className="text-gray-400 text-base"  >Instagram</p>
-                <p className="text-gray-400 text-base"  >LinkedIn</p>
-                <p className="text-gray-400 text-base"  >Twitter</p>
-                <p className="text-gray-400 text-base"  >Whatsapp</p>
+                <p className="text-gray-400 text-base  hover:text-white  "  ><a href="/">Instagram</a></p>
+                <p className="text-gray-400 text-base  hover:text-white   "  ><a href="/">Facebook</a></p>
+                <p className="text-gray-400 text-base  hover:text-white   "  ><a href="/">Twitter</a></p>
+                <p className="text-gray-400 text-base   hover:text-white  "  ><a href="/">Whatsapp</a></p>
             </div>
         </div>
 
@@ -54,7 +54,7 @@ const Footer = () => {
 
         <hr  className="border-t-2 mx-16  border-white py-4"/>
 
-        <div className="flex flex-wrap  w-full lg:flex-nowrap justify-between px-14">
+        <div className="flex flex-wrap  justify-center gap-6  w-full lg:flex-nowrap md:justify-between px-14">
             <p  className="text-white">© 2025 Hariharan S.All rights Reserved.</p>
             <p  className="text-white" >Terms & Conditions | Privacy</p>
         </div>

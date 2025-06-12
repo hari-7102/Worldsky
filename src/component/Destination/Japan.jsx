@@ -36,9 +36,9 @@ const Indonesia = () => {
   return (
     <div>
       <Navbar />
-      <div className="px-11 py-14">
+      <div className="px-5 py-14">
         <p className="text-6xl font-serif  ">Japan</p>
-        <div className="grid md:grid-cols-3  grid-cols-1  grid-rows-12  md:grid-rows-7  gap-4 mt-5 ">
+        <div className="grid md:grid-cols-3   px-2  grid-cols-1  grid-rows-12  md:grid-rows-7  gap-4 mt-5 ">
           {pic.map((i, index) => (
             <p
               key={index}

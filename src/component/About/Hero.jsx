@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="px-16 py-7 md:py-20 flex flex-wrap lg:flex-nowrap">
+    <div className="md:px-16 px-5    py-7 md:py-20 flex flex-wrap lg:flex-nowrap">
       <div className="md:w-1/2 w-full">
         <p className=" text-4xl  md:text-6xl font-medium text-black">
           Welcome to <span className="text-blue-500">WorldSky</span> Your

@@ -3,10 +3,10 @@ import { PhoneOutgoing } from 'lucide-react';
 import { MapPinHouse } from 'lucide-react';
 const Contact = () => {
   return (
-    <div className='px-20 py-11 flex  '>
-        <div className='w-1/2 '>
-           <p className='text-6xl text-black font-serif'>Book a Journey </p> 
-           <p className='text-5xl text-black mt-2 font-serif'>with <span  className='text-blue-600'> WorldSky</span> </p> 
+    <div className='md:px-20 px-5  py-4  md:py-11 flex flex-wrap lg:flex-nowrap'>
+        <div className='md:w-1/2  w-full  '>
+           <p className='md:text-6xl  text-5xl     text-black font-serif'>Book a Journey </p> 
+           <p className=' text-4xl   md:text-5xl text-black mt-2 font-serif'>with <span  className='text-blue-600'> WorldSky</span> </p> 
         
 
         <div className='flex items-center gap-5 mx-3.5 mt-12'>
@@ -38,8 +38,8 @@ const Contact = () => {
 
         </div>
 
-        <div className='w-1/2 px-14'>
-            <div className='border border-gray-300 rounded-2xl p-7'>
+        <div className='md:w-1/2 md:px-14     w-full md:py-0 py-16 '>
+            <div className='border focus:border-gray-700        border-gray-300 rounded-2xl p-7'>
                 <p className='text-blue-600 text-4xl font-medium '>Get In Touch</p>
                 <input type="text" 
                 name="" 

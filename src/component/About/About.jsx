@@ -6,17 +6,17 @@ import { CalendarRange } from 'lucide-react';
 
 const About = () => {
   return (
-    <div className="px-16 py-11 ">
+    <div className="md:px-16 px-6 py-11 ">
       <div className="w-full flex flex-wrap lg:flex-nowrap">
       <div className="md:w-1/2   w-full ">
         <img
-          className="md:h-[41rem] h-fit w-full rounded-2xl  "
+          className="md:h-[41rem] h-auto w-full rounded-2xl  "
           src="https://images.pexels.com/photos/28772389/pexels-photo-28772389/free-photo-of-majestic-snow-capped-mountain-in-tirol-austria.jpeg?auto=compress&cs=tinysrgb&w=600"
           alt=""
         />
       </div>
-      <div className="md:w-1/2  w-full  py-6 px-7 ">
-        <p className="text-6xl font-medium text-black">
+      <div className="md:w-1/2  w-full  py-6 md:px-7 ">
+        <p className="md:text-6xl text-5xl font-medium text-black">
           A Story Of <span className="text-blue-600"> WorldSky </span>{" "}
         </p>
         <p className="max-w-2xl text-gray-600  py-8 ">
@@ -55,13 +55,13 @@ const About = () => {
       </div>
       </div>
 
-      <div className="w-full flex  py-24">
-        <div className="w-1/2 ">
-            <p className="text-6xl font-medium text-blue-600 ">WorldSky</p>
+      <div className="w-full md:flex  flex-wrap lg:flex-nowrap  py-10  md:py-24">
+        <div className="md:w-1/2 w-full ">
+            <p className="text-5xl  md:text-6xl font-medium text-blue-600 ">WorldSky</p>
             <p className="text-4xl mt-2 font-medium  text-black ">What We Offer</p>
 
             <p className="text-base mt-6 text-gray-500">At WorldSky, we aim to be your one-stop travel solution. Our platform is designed to help you:</p>
-            <div className="flex p-3 items-center gap-11 max-w-xl  my-4 border border-gray-600 rounded-2xl mx-2.5">
+            <div className="flex p-3 items-center gap-11 md:max-w-xl  my-4 border border-gray-600 rounded-2xl md:mx-2.5">
               <ClockPlus size={50} className="bg-gray-200  rounded-xl px-2"/>
               <div className="">
                 <p className="text-xl font-semibold text-black">Explore Top Travel Destinations</p>
@@ -69,7 +69,7 @@ const About = () => {
 </p>
               </div>
             </div>
-            <div className="flex p-3 items-center gap-11 max-w-xl  my-4 border border-gray-600 rounded-2xl mx-2.5">
+            <div className="flex p-3 items-center gap-11 max-w-xl  my-4 border border-gray-600 rounded-2xl md:mx-2.5">
               <CopyPlus size={50} className="bg-gray-200  rounded-xl px-2"/>
               <div className="">
                 <p className="text-xl font-semibold text-black">Plan Personalized Trips</p>
@@ -77,7 +77,7 @@ const About = () => {
 </p>
               </div>
             </div>
-            <div className="flex p-3 items-center gap-11 max-w-xl  my-4 border border-gray-600 rounded-2xl mx-2.5">
+            <div className="flex p-3 items-center gap-11 max-w-xl  my-4 border border-gray-600 rounded-2xl md:mx-2.5">
               <CalendarRange size={55} className="bg-gray-200  rounded-xl px-2"/>
               <div className="">
                 <p className="text-xl font-semibold text-black"> Discover Activities and Local Experiences</p>
@@ -86,7 +86,7 @@ const About = () => {
               </div>
             </div>
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2  w-full py-5   " >
             <img src="https://images.pexels.com/photos/32368121/pexels-photo-32368121/free-photo-of-scenic-view-of-istanbul-with-topkapi-palace.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
             className="rounded-xl" alt="" />
         </div>

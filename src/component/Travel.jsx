@@ -4,8 +4,8 @@ const Travel = () => {
   return (
     <div className='flex flex-wrap w-full lg:flex-nowrap justify-center py-16   md:py-28'>
 
-        <div className='md:w-1/2 w-full flex justify-center'>
-            <img src={River} alt="" className='w-80 h-auto rounded-3xl'/>
+        <div className='md:w-1/2 w-full  flex justify-center'>
+            <img src={River} alt="" className='md:w-96 w-full md:px-0 px-6  h-auto rounded-2xl'/>
         </div>
 
         <div className='md:w-1/2 px-4  w-full py-11 md:py-1 items-center md:items-start flex-col   flex-wrap lg:flex-nowrap flex justify-start gap-1.5 px-auto'>
