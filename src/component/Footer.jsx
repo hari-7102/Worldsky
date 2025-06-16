@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="md:w-2/3 py-4  w-full md:items-end md:justify-end  justify-center items-center flex flex-wrap lg:flex-nowrap  gap-6 md:gap-20">
             <div className="flex flex-wrap lg:flex-nowrap w-full  justify-center items-center  flex-col text-white gap-2.5">
                 <p className="text-2xl mb-1.5">Destination</p>
-                <p className="text-gray-400 text-base  hover:text-white    "><a href="/destination/japan">Japan</a></p>
+                <p className="text-gray-400 text-base  hover:text-white    "><a href="/destination/india">India</a></p>
                 <p  className="text-gray-400 text-base   hover:text-white    " ><a href="/destination/italy">Italy</a></p>
                 <p  className="text-gray-400 text-base   hover:text-white  " ><a href="/destination/indonesia">Indonesia</a></p>
                 <p className="text-gray-400 text-base  hover:text-white    "   ><a href="/destination/japan">Japan</a></p>

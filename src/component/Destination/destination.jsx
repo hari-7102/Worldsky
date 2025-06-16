@@ -1,6 +1,8 @@
 import React from "react";
 import { MapPin } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+
+import { AnimatePresence, motion } from "framer-motion";
 const destination = () => {
   const navigate = useNavigate();
   return (
@@ -15,7 +17,11 @@ const destination = () => {
       {/* <p className='text-6xl font-semibold mt-6'>Italy Tourism</p> */}
 
       <div className="flex flex-col items-center justify-center">
-        <div
+        <motion.div
+              initial={{opacity:0 , y:30}}
+              animate={{opacity: 1 , y:1}}
+              transition={{duration:0.3 }}
+              
           onClick={() => navigate("/destination/india")}
           className=' md:my-24 my-5  bg-[url("https://images.pexels.com/photos/5124396/pexels-photo-5124396.jpeg")] md:w-4/5 w-full  h-[31rem] bg-cover relative rounded-2xl '
         >
@@ -24,8 +30,14 @@ const destination = () => {
             <MapPin size={26} />
             <p className="text-2xl text-black">India</p>
           </div>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+
+              initial={{opacity:0 , y:30}}
+              whileInView={{opacity: 1 , y:1}}
+              transition={{duration:0.5 ,}}
+              viewport={{once: true , amount:0.5}}
+
           onClick={() => navigate("/destination/japan")}
           className='bg-[url("https://vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com/shutterstock601341215huge-1675509836757.jpg")] bg-cover h-[31rem] items-center w-full md:w-4/5 md:my-24 my-5 relative rounded-2xl '
         >
@@ -40,11 +52,15 @@ const destination = () => {
             <p className='bg-amber-600  w-full col-span-2 row-span-2  rounded-2xl   '></p>
             <p className='bg-amber-600  w-full col-span-1  rounded-2xl   '></p> */}
           {/* <p className='bg-amber-600  w-full col-span-1  rounded-2xl   '></p> */}
-        </div>
+        </motion.div>
 
         {/* <p className='flex text-xl max-w-3xl text-gray-600 mx-36 mt-8 items-start'>Get the best Value fro Your trips with exclusive discounts, seasonal promotions and deals to save whole exploring the World</p> */}
 
-        <div
+        <motion.div 
+              initial={{opacity:0 , y:30}}
+              whileInView={{opacity: 1 , y:1}}
+              transition={{duration:0.5 ,}}
+              viewport={{once: true , amount:0.5}}
           onClick={() => navigate("/destination/italy")}
           className=' md:my-24 my-5  bg-[url("https://hblimg.mmtcdn.com/content/hubble/img/dest_img/mmt/activities/m_rome_destination_main_1_l_667_1000.jpg")] md:w-4/5 w-full  h-[31rem] bg-cover relative rounded-2xl '
         >
@@ -53,9 +69,13 @@ const destination = () => {
             <MapPin size={26} />
             <p className="text-2xl text-black">Italy</p>
           </div>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div   
+                initial={{opacity:0 , y:30}}
+              whileInView={{opacity: 1 , y:1}}
+              transition={{duration:0.5 ,}}
+              viewport={{once: true , amount:0.5}}
           onClick={() => navigate("/destination/indonesia")}
           className=' md:my-24 my-5 bg-[url("https://images.pexels.com/photos/28518047/pexels-photo-28518047/free-photo-of-majestic-prambanan-temple-complex-in-java.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")] md:w-4/5 w-full h-[31rem] bg-cover relative rounded-2xl '
         >
@@ -64,7 +84,7 @@ const destination = () => {
             <MapPin size={26} className="text-white" />
             <p className="text-2xl text-white">Indonesia</p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

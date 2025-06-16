@@ -1,9 +1,16 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <div className="md:px-16 px-5    py-7 md:py-20 flex flex-wrap lg:flex-nowrap">
-      <div className="md:w-1/2 w-full">
+      <motion.div 
+            initial={{opacity:0 , x:-40}}
+            whileInView={{opacity : 1 , x:1}}
+            transition={{duration: 0.5 }}
+            viewport={{once: true }}
+
+
+      className="md:w-1/2 w-full">
         <p className=" text-4xl  md:text-6xl font-medium text-black">
           Welcome to <span className="text-blue-500">WorldSky</span> Your
           Gateway to Adventure!
@@ -34,15 +41,20 @@ const Hero = () => {
         <button className="   px-5 py-2 rounded-3xl bg-black text-white">
           Explore More →{" "}
         </button>
-      </div>
+      </motion.div>
 
-      <div className="md:w-1/2 w-full py-4">
+      <motion.div   
+            initial={{opacity:0 , x:40}}
+            whileInView={{opacity : 1 , x:1}}
+            transition={{duration: 0.5 }}
+            viewport={{once: true }}
+      className="md:w-1/2 w-full py-4">
         <img
           src="https://images.pexels.com/photos/12887393/pexels-photo-12887393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           className="rounded-2xl"
           alt=""
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

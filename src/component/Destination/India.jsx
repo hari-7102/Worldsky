@@ -6,16 +6,16 @@ const Indonesia = () => {
   const pic = [
     "https://images.pexels.com/photos/31783334/pexels-photo-31783334/free-photo-of-lotus-temple-architectural-marvel-in-new-delhi.jpeg?auto=compress&cs=tinysrgb&w=600",
     "https://images.pexels.com/photos/7850522/pexels-photo-7850522.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/9869786/pexels-photo-9869786.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/910393/pexels-photo-910393.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/3038555/pexels-photo-3038555.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/2958434/pexels-photo-2958434.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/17395972/pexels-photo-17395972/free-photo-of-photo-of-the-piazza-navona-square-in-rome-italy.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/14864075/pexels-photo-14864075.jpeg",
+    "https://images.pexels.com/photos/28868178/pexels-photo-28868178.jpeg",
+    "https://images.pexels.com/photos/6637785/pexels-photo-6637785.jpeg",
+    "https://images.pexels.com/photos/10794232/pexels-photo-10794232.jpeg",
+    "https://images.pexels.com/photos/18680873/pexels-photo-18680873.jpeg",
     "https://images.pexels.com/photos/29761659/pexels-photo-29761659/free-photo-of-stunning-sunset-over-vatican-city-skyline.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/5074416/pexels-photo-5074416.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/19367138/pexels-photo-19367138/free-photo-of-bridge-in-florence-during-sunset.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/30647406/pexels-photo-30647406/free-photo-of-scenic-italian-coastline-with-rocky-cliffs.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/23358558/pexels-photo-23358558/free-photo-of-ruins-of-colosseum-in-rome.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/12475522/pexels-photo-12475522.jpeg",
+    "https://images.pexels.com/photos/8548823/pexels-photo-8548823.jpeg",
+    "https://images.pexels.com/photos/16100356/pexels-photo-16100356.jpeg",
+    "https://images.pexels.com/photos/30588229/pexels-photo-30588229.png",
   ];
 
   const css = [
@@ -29,7 +29,7 @@ const Indonesia = () => {
     "row-span-1 md:row-span-1",
     "row-span-1 md:row-span-3",
     "row-span-1 md:row-span-2",
-    "row-span-1 md:row-span-2",
+    "row-span-1 md:row-span-2 bg-bottom  ",
     "row-span-1 md:row-span-1",
   ];
 
