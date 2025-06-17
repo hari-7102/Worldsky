@@ -3,19 +3,31 @@ import { ArrowRight } from 'lucide-react';
 import { ClockPlus } from 'lucide-react';
 import { CopyPlus } from 'lucide-react';
 import { CalendarRange } from 'lucide-react';
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div className="md:px-16 px-6 py-11 ">
       <div className="w-full flex flex-wrap lg:flex-nowrap">
-      <div className="md:w-1/2   w-full ">
+      <motion.div 
+            initial={{opacity : 0 , x:-30}}
+             whileInView={{opacity : 1 , x:0}}
+            transition={{duration : 0.5}}
+            viewport={{amount : 0.4 , once:true}}
+
+      className="md:w-1/2  w-full ">
         <img
           className="md:h-[41rem] h-auto w-full rounded-2xl  "
           src="https://images.pexels.com/photos/28772389/pexels-photo-28772389/free-photo-of-majestic-snow-capped-mountain-in-tirol-austria.jpeg?auto=compress&cs=tinysrgb&w=600"
           alt=""
         />
-      </div>
-      <div className="md:w-1/2  w-full  py-6 md:px-7 ">
+      </motion.div>
+      <motion.div 
+            initial={{opacity : 0 , x:30}}
+             whileInView={{opacity : 1 , x:0}}
+            transition={{duration : 0.5}}
+            viewport={{amount : 0.4 , once:true}}
+      className="md:w-1/2  w-full  py-6 md:px-7 ">
         <p className="md:text-6xl text-5xl font-medium text-black">
           A Story Of <span className="text-blue-600"> WorldSky </span>{" "}
         </p>
@@ -52,11 +64,16 @@ const About = () => {
           together to create a tool that understands the real needs of 
           modern travelers.
         </p>
-      </div>
+      </motion.div>
       </div>
 
       <div className="w-full md:flex  flex-wrap lg:flex-nowrap  py-10  md:py-24">
-        <div className="md:w-1/2 w-full ">
+        <motion.div 
+            initial={{opacity : 0 , x:-30}}
+            whileInView={{opacity : 1 , x:0}}
+            transition={{duration : 0.5}}
+            viewport={{amount : 0.4 , once:true}}
+        className="md:w-1/2 w-full ">
             <p className="text-5xl  md:text-6xl font-medium text-blue-600 ">WorldSky</p>
             <p className="text-4xl mt-2 font-medium  text-black ">What We Offer</p>
 
@@ -85,11 +102,17 @@ const About = () => {
 </p>
               </div>
             </div>
-        </div>
-        <div className="md:w-1/2  w-full py-5   " >
+        </motion.div>
+        <motion.div 
+            initial={{opacity : 0 , x:30}}
+            whileInView={{opacity : 1 , x:0}}
+            transition={{duration : 0.5}}
+            viewport={{amount : 0.4 , once:true}}
+
+        className="md:w-1/2  w-full py-5   " >
             <img src="https://images.pexels.com/photos/32368121/pexels-photo-32368121/free-photo-of-scenic-view-of-istanbul-with-topkapi-palace.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
             className="rounded-xl" alt="" />
-        </div>
+        </motion.div>
 
       </div>
       

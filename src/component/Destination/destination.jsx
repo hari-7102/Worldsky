@@ -1,10 +1,17 @@
 import React from "react";
 import { MapPin } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
+import  { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+
+
 const destination = () => {
   const navigate = useNavigate();
+
+  
+
+
+  
   return (
     <div className="md:px-16 px-7 md:py-10 py-5 ">
       <p className="text-5xl w-full  md:text-7xl font-serif">
@@ -20,7 +27,7 @@ const destination = () => {
         <motion.div
               initial={{opacity:0 , y:30}}
               animate={{opacity: 1 , y:1}}
-              transition={{duration:0.3 }}
+              transition={{duration:0.4 }}
               
           onClick={() => navigate("/destination/india")}
           className=' md:my-24 my-5  bg-[url("https://images.pexels.com/photos/5124396/pexels-photo-5124396.jpeg")] md:w-4/5 w-full  h-[31rem] bg-cover relative rounded-2xl '

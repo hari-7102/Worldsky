@@ -1,13 +1,19 @@
 import React from 'react'
 import Carousel from "@/components/ui/carousel";
-
+import { motion } from 'framer-motion';
 function Good() {
   return (
-    <div>
+    <motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 0.5 }}
+  viewport={{ amount: 0.4, once: true }}
+
+    >
         <p className='text-center text-3xl md:text-5xl pt-11 text-black font-serif'>GET A GOOD TRAVEL</p>
         <p className='text-center text-3xl md:text-5xl  text-black font-serif'>EXPERIENCE</p>
         <CarouselDemo/>
-    </div>
+    </motion.div>
   )
 }
 
