@@ -196,3 +196,8 @@ export const CoolMode = ({ children, options }) => {
 
   return React.cloneElement(children, { ref });
 };
+
+
+
+
+

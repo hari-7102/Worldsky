@@ -44,13 +44,8 @@ export function WobbleCardDemo() {
             </p>
         </div>
 
-  {/* <img
-    src="/linear.webp"
-    width={500}
-    height={500}
-    alt="linear demo image"
-    className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl z-0" */}
-  {/* /> */}
+  
+
 </WobbleCard>
 
     <WobbleCard
@@ -123,4 +118,12 @@ export function WobbleCardDemo() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
 
